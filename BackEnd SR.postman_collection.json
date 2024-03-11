@@ -1,0 +1,427 @@
+{
+	"info": {
+		"_postman_id": "00d3212f-3704-45d3-9eb9-634b7579d636",
+		"name": "BackEnd SR",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11630739"
+	},
+	"item": [
+		{
+			"name": "API Dragon Ball Z",
+			"item": [
+				{
+					"name": "all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://dragonball-api.com/api/characters",
+							"protocol": "https",
+							"host": [
+								"dragonball-api",
+								"com"
+							],
+							"path": [
+								"api",
+								"characters"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "characters",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://dragonball-api.com/api/characters/4",
+							"protocol": "https",
+							"host": [
+								"dragonball-api",
+								"com"
+							],
+							"path": [
+								"api",
+								"characters",
+								"4"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://dragonball-api.com/api/characters/1",
+									"protocol": "https",
+									"host": [
+										"dragonball-api",
+										"com"
+									],
+									"path": [
+										"api",
+										"characters",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.18.0 (Ubuntu)"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 08 Mar 2024 01:12:50 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2545"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=864000"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"9f1-f4t/auNIE4S2L3nkGJgREFmvdmY\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"Goku\",\n    \"ki\": \"60.000.000\",\n    \"maxKi\": \"90 Septillion\",\n    \"race\": \"Saiyan\",\n    \"gender\": \"Male\",\n    \"description\": \"El protagonista de la serie, conocido por su gran poder y personalidad amigable. Originalmente enviado a la Tierra como un infante volador con la misión de conquistarla. Sin embargo, el caer por un barranco le proporcionó un brutal golpe que si bien casi lo mata, este alteró su memoria y anuló todos los instintos violentos de su especie, lo que lo hizo crecer con un corazón puro y bondadoso, pero conservando todos los poderes de su raza. No obstante, en la nueva continuidad de Dragon Ball se establece que él fue enviado por sus padres a la Tierra con el objetivo de sobrevivir a toda costa a la destrucción de su planeta por parte de Freeza. Más tarde, Kakarot, ahora conocido como Son Goku, se convertiría en el príncipe consorte del monte Fry-pan y líder de los Guerreros Z, así como el mayor defensor de la Tierra y del Universo 7, logrando mantenerlos a salvo de la destrucción en innumerables ocasiones, a pesar de no considerarse a sí mismo como un héroe o salvador.\",\n    \"image\": \"https://res.cloudinary.com/dgtgbyo76/image/upload/v1699044374/hlpy6q013uw3itl5jzic.webp\",\n    \"affiliation\": \"Z Fighter\",\n    \"deletedAt\": null,\n    \"originPlanet\": {\n        \"id\": 1,\n        \"name\": \"Namek\",\n        \"isDestroyed\": true,\n        \"description\": \"Planeta natal de los Namekianos. Escenario de importantes batallas y la obtención de las Dragon Balls de Namek.\",\n        \"image\": \"https://res.cloudinary.com/dgtgbyo76/image/upload/v1699145134/wxedvvh8kiyw00psvphl.webp\",\n        \"deletedAt\": null\n    },\n    \"transformations\": [\n        {\n            \"id\": 1,\n            \"name\": \"Goku SSJ\",\n            \"image\": \"https://res.cloudinary.com/dgtgbyo76/image/upload/v1699050838/x8vdjitiaygwbrbh3ps9.png\",\n            \"ki\": \"3 Billion\",\n            \"deletedAt\": null\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Goku SSJ2\",\n            \"image\": \"https://res.cloudinary.com/dgtgbyo76/image/upload/v1699050861/b4engvubliyprwpgdzns.png\",\n            \"ki\": \"6 Billion\",\n            \"deletedAt\": null\n        },\n        {\n            \"id\": 3,\n            \"name\": \"Goku SSJ3\",\n            \"image\": \"https://res.cloudinary.com/dgtgbyo76/image/upload/v1699050875/kw8mf7q101rjjiir387d.png\",\n            \"ki\": \"24 Billion\",\n            \"deletedAt\": null\n        },\n        {\n            \"id\": 4,\n            \"name\": \"Goku SSJ4\",\n            \"image\": \"https://res.cloudinary.com/dgtgbyo76/image/upload/v1699050888/iugojj27qfragm7rgum4.jpg\",\n            \"ki\": \"2 Quadrillion\",\n            \"deletedAt\": null\n        },\n        {\n            \"id\": 5,\n            \"name\": \"Goku SSJB\",\n            \"image\": \"https://res.cloudinary.com/dgtgbyo76/image/upload/v1699050898/wfqyp1lornq8rpavfx04.png\",\n            \"ki\": \"9 Quintillion\",\n            \"deletedAt\": null\n        },\n        {\n            \"id\": 44,\n            \"name\": \"Goku Ultra Instinc\",\n            \"image\": \"https://res.cloudinary.com/dgtgbyo76/image/upload/v1699123373/tmj6mkodjqbxlc6d3qfi.png\",\n            \"ki\": \"90 Septillion\",\n            \"deletedAt\": null\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "all page",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://dragonball-api.com/api/characters?page=5&limit=5",
+							"protocol": "https",
+							"host": [
+								"dragonball-api",
+								"com"
+							],
+							"path": [
+								"api",
+								"characters"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "5"
+								},
+								{
+									"key": "limit",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "dbz-msa-dragon-ball-z-bff",
+			"item": [
+				{
+					"name": "BFF ObtenerFavoritos",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkZmxvcmVzZzEiLCJleHAiOjE3MTAwOTcwMjZ9.DD5H6Vmr6nRbTB1x8ybxUqVhOgePvz3hze05zJYuNUx1kKGY6lcJ5YiaonsBJBCHMzWmJmr4b7o0b-Wo9z3_RA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/v1/dragonballz/favorites/dfloresg",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"v1",
+								"dragonballz",
+								"favorites",
+								"dfloresg"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BFF MarcarFavorito",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkZmxvcmVzZzEiLCJleHAiOjE3MTAxMzM0MDN9.BbVRKPlXPbKUU46CQu0mFVFWg0rFUROUumIUYU48StEpNKnXaKTMy44Q_9erHZ-pGwhQwBx2QwNjuDXHMYnXvw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": \"dfloresg\",\r\n    \"id\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/v1/dragonballz/favorites",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"v1",
+								"dragonballz",
+								"favorites"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "dbz-msa-favorite-characters",
+			"item": [
+				{
+					"name": "MARCA/DESMARCA FAVORITO",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": \"dfloresg\",\r\n    \"id\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/favorite",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"favorite"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CONSULTAR FAVORITOS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/favorites/dfloresg",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"favorites",
+								"dfloresg"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "dbz-msa-security",
+			"item": [
+				{
+					"name": "user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"usermane\":\"dfloresg1\",\r\n\t\"email\":\"diego.flores.guerra@gmail.com\",\r\n\t\"password\":\"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "token",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\":\"dfloresg1\",\r\n\t\"password\":\"1234\",\r\n    \"clientSecret\":\"secreto\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/token",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "validateToken",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkZmxvcmVzZzEiLCJleHAiOjE3MTAwODgwNDB9.oqhny5i7Z93bS-1_xQo6XB0Zy9uUg5WqaFiPLwAxM4LjUoa-RhSh_fyd1xMdDkJuratHxKkvf_RU92RQkerizQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "clientSecret",
+								"value": "secreto",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/validateToken",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"validateToken"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "dbz-msa-characters",
+			"item": [
+				{
+					"name": "charactersAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/characters",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"characters"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "characterOne",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/characters/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"characters",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
