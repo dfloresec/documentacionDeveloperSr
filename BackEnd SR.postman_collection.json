@@ -161,7 +161,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkZmxvcmVzZzEiLCJleHAiOjE3MTAwOTcwMjZ9.DD5H6Vmr6nRbTB1x8ybxUqVhOgePvz3hze05zJYuNUx1kKGY6lcJ5YiaonsBJBCHMzWmJmr4b7o0b-Wo9z3_RA",
+									"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkZmxvcmVzZzEiLCJleHAiOjE3MTAxNTc5NTZ9.VBTBQUd7ybWbHQW3fNJ4R3HlP-QsS87__9B0aOWgxTuUlJQbKQGXLMISiqeQtLNZCo31VUXPY-B57fZJbm5j2g",
 									"type": "string"
 								}
 							]
@@ -186,6 +186,38 @@
 					"response": []
 				},
 				{
+					"name": "BFF ObtenerTodosConFavoritos",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkZmxvcmVzZzEiLCJleHAiOjE3MTAxNTc5NTZ9.VBTBQUd7ybWbHQW3fNJ4R3HlP-QsS87__9B0aOWgxTuUlJQbKQGXLMISiqeQtLNZCo31VUXPY-B57fZJbm5j2g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/v1/dragonballz/allWithFavorites/dfloresg",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"v1",
+								"dragonballz",
+								"allWithFavorites",
+								"dfloresg"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "BFF MarcarFavorito",
 					"request": {
 						"auth": {
@@ -193,7 +225,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkZmxvcmVzZzEiLCJleHAiOjE3MTAxMzM0MDN9.BbVRKPlXPbKUU46CQu0mFVFWg0rFUROUumIUYU48StEpNKnXaKTMy44Q_9erHZ-pGwhQwBx2QwNjuDXHMYnXvw",
+									"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkZmxvcmVzZzEiLCJleHAiOjE3MTAxNTgzOTF9.Hs7rorjICJYo0Zedlo-em9_eobscdYmVMqpm9MT9n1A6RGJW2h9XQ1GsoIANyzZ3bmqdoH0MjUpGkgQ2K3cKsg",
 									"type": "string"
 								}
 							]
@@ -237,7 +269,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"user\": \"dfloresg\",\r\n    \"id\": 5\r\n}",
+							"raw": "{\r\n    \"user\": \"dfloresg\",\r\n    \"id\": 8\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -272,6 +304,26 @@
 							"port": "8082",
 							"path": [
 								"favorites",
+								"dfloresg"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CONSULTAR ALL FAVORITOS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/allWithFavorites/dfloresg",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"allWithFavorites",
 								"dfloresg"
 							]
 						}
